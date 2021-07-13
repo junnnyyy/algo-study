@@ -23,3 +23,4 @@ trees = Counter(list(map(int, sys.stdin.readline().split()))).most_common()
 l, h = 0, max(trees)[0]
 print(bin_search(l, h))
 
+
