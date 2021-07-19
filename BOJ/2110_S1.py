@@ -1,28 +1,24 @@
 def bin_search(l, r):
-    ans = 0
+    global ans
     while l <= r:
         gap = (l + r) // 2
-        cnt, start = 0, s
+        cnt, start = 1, X[0]
         for x in X:
-            if x - start >= gap: # 기준간격보다 멀면
+            if x - start >= gap:
                 start = x
-                cnt += 1 # 공유기 설치
-        if cnt >= c: # 더 넓게 설치할 수 있겠다 싶으면.
+                cnt += 1
+        if cnt >= C:
             ans = gap
             l = gap + 1
         else:
-            r = gap -1
-    return ans
+            r = gap - 1
+    return
 
 
 N, C = map(int, input().split())
-X, s = [], 0
-s = 0
-for _ in range(N):
-    if not _:
-        s = int(input())
-    else:
-        X.append(int(input()))
-r, c, l = X[-1], C - 1, s # l은 이진 탐색을 위함, s는 시작 기준점을 위함
+X = [int(input()) for _ in range(N)]
+ans = 1
 X.sort()
-print(bin_search(l, r))
+r = X[-1] - X[0]
+bin_search(1, r)
+print(ans)
