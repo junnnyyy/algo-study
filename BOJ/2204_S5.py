@@ -1,4 +1,4 @@
-ans, low_ans = '', ''
+ans, low_ans = '', '' # 초기값
 n = int(input())
 while n:
     lst, low_lst = [], []
