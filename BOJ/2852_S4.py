@@ -1,6 +1,6 @@
-goal = ['00:00']
+goal = ['00:00'] # 골 들어간 시간 기록
 n = int(input())
-one, two = [0], [0]
+one, two = [0], [0] # 각 골이 들어간 시점에서 각 팀의 점수
 
 for _ in range(n):
     team, time = input().split()
