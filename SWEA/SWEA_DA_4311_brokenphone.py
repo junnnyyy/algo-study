@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('input.txt', 'r')
+# sys.stdin = open('input.txt', 'r')
 # 터치 가능한 숫자들의 개수 N
 # 터치 가능한 연산자들의 개수 O
 # 최대 터치 가능한 횟수 M
